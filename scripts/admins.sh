@@ -20,7 +20,7 @@ while true; do
 read -p ": " command
 
 if [ "$command" == "*" ]; then
-    ls -d /obligatorio/usuarios/*/
+    ls -d obligatorio/usuarios/*/
     echo "$(date) - $usuario vió la información de todos los usuarios" >> log/$usuario
     echo "$(date) - $usuario vió la información de todos los usuarios" >> log/general
 elif [ "$command" == "!" ]; then
